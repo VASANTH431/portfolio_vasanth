@@ -210,7 +210,7 @@ export default function HomeAssistant() {
       } else if (lowerInput.includes('resume') || lowerInput.includes('cv') || lowerInput.includes('download')) {
         botResponse = "You can download or view Vasanth's updated resume directly from the Resume section.";
       } else if (lowerInput.includes('cert') || lowerInput.includes('course') || lowerInput.includes('cisco')) {
-        botResponse = "Vasanth holds 6 certifications from Cisco Networking Academy, including CCNAv7 (various modules), Cybersecurity, and Data Analytics. Check out the Certificates section!";
+        botResponse = "Vasanth holds 7 certifications from Cisco Networking Academy, including Python Essentials, CCNAv7 (various modules), Cybersecurity, and Data Analytics. Check out the Certificates section!";
       } else if (lowerInput.includes('hello') || lowerInput.includes('hi') || lowerInput.includes('hey')) {
         botResponse = "Hello there! How can I help you explore Vasanth's portfolio today?";
       }

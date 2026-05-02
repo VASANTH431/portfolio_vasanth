@@ -8,6 +8,8 @@ import ciscoCybersecurity from '../assets/images/cisco_cybersecurity.jpg';
 import ciscoDataAnalytics from '../assets/images/cisco_data_analytics.jpg';
 import ciscoCcnaSrwe from '../assets/images/cisco_ccna_srwe.jpg';
 import ciscoCcnaItn from '../assets/images/cisco_ccna_itn.jpg';
+import ciscoPythonEssentials from '../assets/images/cisco_python_essentials.jpg';
+
 
 function toPoints(text) {
   return text
@@ -64,6 +66,14 @@ const certificates = [
     image: ciscoCcnaItn,
     summary: 'Learned the architecture, structure, functions, components, and models of the Internet and other computer networks.',
     details: 'Completed the CCNAv7: Introduction to Networks course through Cisco Networking Academy. This course introduced the architecture, structure, functions, components, and models of the Internet and computer networks. Achieved a solid understanding of how networks operate and how to build simple local area networks (LANs), perform basic configurations for routers and switches, and implement Internet Protocol (IP).',
+    platform: 'Cisco Networking Academy',
+  },
+  {
+    title: 'Python Essentials 1',
+    issuer: 'Cisco Networking Academy & Python Institute',
+    image: ciscoPythonEssentials,
+    summary: 'Mastered the fundamentals of Python programming, including data types, variables, loops, and core algorithmic thinking.',
+    details: 'Successfully completed the Python Essentials 1 course. This course provided a comprehensive introduction to Python programming, covering basic data types, variables, operators, and control flow statements. Developed foundational skills in writing clean, efficient Python code and understanding the core principles of computer programming, which are critical for software development and data science.',
     platform: 'Cisco Networking Academy',
   },
 ];
