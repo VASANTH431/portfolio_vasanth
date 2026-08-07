@@ -122,7 +122,7 @@ export default function Contact() {
             <div>
               <label className="block text-sm font-medium text-[#2c2118] mb-1.5">Email</label>
               <input type="email" name="email" value={form.email} onChange={handleChange}
-                required placeholder="vasanthc1177@gmail.com" className={inputClass} />
+                required placeholder="Your valid email" className={inputClass} />
             </div>
             <div>
               <label className="block text-sm font-medium text-[#2c2118] mb-1.5">Message</label>
