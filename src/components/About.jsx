@@ -4,7 +4,7 @@ import { FaArrowRight } from 'react-icons/fa';
 const stats = [
   {
     label: 'Projects Built',
-    value: '3+',
+    value: '5+',
     detail: 'Academic, personal, and portfolio projects focused on practical solutions.',
   },
   {
@@ -13,8 +13,8 @@ const stats = [
     detail: 'Hands-on exposure across frontend, backend, databases, and developer tools.',
   },
   {
-    label: 'Months Experience',
-    value: '6+',
+    label: 'Years Experience',
+    value: '1.5+',
     detail: 'Consistent learning and project-based development with modern web technologies.',
   },
 ];

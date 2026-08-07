@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import emailjs from '@emailjs/browser';
+
 import { FaEnvelope, FaPhone, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const contactInfo = [
@@ -22,20 +22,32 @@ export default function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setStatus('sending');
-    emailjs.send(
-      'service_k7ionkf', // 👈 Replace with your EmailJS Service ID
-      'template_8bgbj8d',
-      { user_name: form.name, user_email: form.email, message: form.message },
-      'vox8a28dkiEumcq_o'
-    ).then(
-      () => {
-        setStatus('success');
-        setForm({ name: '', email: '', message: '' });
+
+    fetch("https://formsubmit.co/ajax/vasanthc1177@gmail.com", {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
       },
-      () => {
+      body: JSON.stringify({
+        name: form.name,
+        email: form.email,
+        message: form.message,
+        _subject: `New message from ${form.name}`
+      })
+    })
+      .then(response => response.json())
+      .then(data => {
+        if (data.success === 'true' || data.success === true) {
+          setStatus('success');
+          setForm({ name: '', email: '', message: '' });
+        } else {
+          setStatus('error');
+        }
+      })
+      .catch(error => {
         setStatus('error');
-      }
-    );
+      });
   };
 
   return (

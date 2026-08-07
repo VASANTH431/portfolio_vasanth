@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { FaDownload, FaEye } from 'react-icons/fa';
-import resumeFile from '../assets/files/Vasanth_C_Resume.pdf';
+import resumeFile from '../assets/files/Vasanth  Resume.pdf';
 
 export default function Resume() {
   return (

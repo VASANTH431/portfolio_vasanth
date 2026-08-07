@@ -20,6 +20,14 @@ const projects = [
     github: 'https://cost-optimization-dashboard.vercel.app/',
     status: 'Completed',
   },
+  {
+    title: 'Hospital Patient Flow Optimization System & Real-Time Bed Availability Dashboard',
+    description:
+      'A smart healthcare management platform for VK Hospital that enables real-time bed tracking, patient management, doctor-patient assignment, and hospital analytics through dedicated Admin, Doctor, and Patient portals.',
+    tech: ['React.js', 'Tailwind CSS', 'Node.js', 'Express.js', 'MongoDB Atlas', 'Socket.IO'],
+    github: 'https://hospital-management-2og7.vercel.app/',
+    status: 'Completed',
+  },
 ];
 
 export default function Projects() {
@@ -64,8 +72,8 @@ export default function Projects() {
       const container = scrollContainerRef.current;
       const itemOffsetWidth = container.children[0].offsetWidth;
       const itemWidth = itemOffsetWidth + 24;
-      
-      const middleIndex = 20 * projects.length; 
+
+      const middleIndex = 20 * projects.length;
       container.scrollLeft = middleIndex * itemWidth + itemOffsetWidth / 2 - container.clientWidth / 2;
       updateCenterIndex();
     }
@@ -103,7 +111,7 @@ export default function Projects() {
           >
             <FaChevronLeft size={18} />
           </button>
-          
+
           <button
             onClick={() => scroll('right')}
             className="absolute -right-3 md:-right-6 top-1/2 -translate-y-1/2 z-10 flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-full bg-[#fffaf2]/90 border border-[#dfcfbd] text-[#c96f3a] opacity-100 md:opacity-0 shadow-[0_8px_20px_rgba(117,77,53,0.15)] backdrop-blur-md transition-all duration-300 hover:scale-110 hover:bg-[#f2dfcf] group-hover/slider:opacity-100"

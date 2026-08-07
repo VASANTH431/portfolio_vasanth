@@ -202,7 +202,7 @@ export default function HomeAssistant() {
       if (lowerInput.includes('skill') || lowerInput.includes('tech') || lowerInput.includes('stack')) {
         botResponse = "Vasanth is skilled in the MERN stack (MongoDB, Express, React, Node.js), JavaScript, Tailwind CSS, and more. Check out the Skills section for a full list!";
       } else if (lowerInput.includes('project') || lowerInput.includes('work') || lowerInput.includes('build')) {
-        botResponse = "Vasanth has recently built a Web Application for Domestic Services and a Cost Optimization Dashboard. You can view them in the Projects section.";
+        botResponse = "Vasanth has recently built a Web Application for Domestic Services, a Cost Optimization Dashboard, and a Hospital Patient Flow Optimization System. You can view them in the Projects section.";
       } else if (lowerInput.includes('contact') || lowerInput.includes('email') || lowerInput.includes('hire')) {
         botResponse = "You can contact Vasanth at vasanthc1177@gmail.com or through the Contact section form. He's currently open to new opportunities!";
       } else if (lowerInput.includes('about') || lowerInput.includes('who') || lowerInput.includes('background')) {
@@ -282,11 +282,10 @@ export default function HomeAssistant() {
                   {chatHistory.map((msg, idx) => (
                     <div
                       key={idx}
-                      className={`p-2.5 rounded-xl max-w-[90%] ${
-                        msg.role === 'user'
+                      className={`p-2.5 rounded-xl max-w-[90%] ${msg.role === 'user'
                           ? 'bg-[#c96f3a] text-white self-end rounded-tr-sm'
                           : 'bg-[#f8eee5] border border-[#e6d5c4] self-start rounded-tl-sm'
-                      }`}
+                        }`}
                     >
                       <p className="leading-relaxed">{msg.text}</p>
                     </div>
