@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import { motion, useMotionValue, useTransform, useSpring } from 'framer-motion';
 import { FaGithub, FaHackerrank, FaLinkedin } from 'react-icons/fa';
 import { SiLeetcode } from 'react-icons/si';
-import heroImg from '../assets/images/vasanth_hero.png';
+import heroImg from '../assets/images/vasanth_1.png';
 import resumeFile from '../assets/files/Vasanth  Resume.pdf';
 import FloatingIcons from './FloatingIcons';
 
